@@ -1,0 +1,10 @@
+{
+  "folders": [
+    {
+      "path": "../../plugins/thelattens-plugin",
+    },
+    {
+      "path": "../../themes/thelattens-theme",
+    },
+  ],
+}
