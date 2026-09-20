@@ -14,6 +14,7 @@
  * @since      1.0.0
  * @requires   PHP 8.0
  */
+
 namespace TheLattensTheme;
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -32,7 +33,7 @@ if ( ! function_exists( __NAMESPACE__ . '\init' ) ) {
 		// Register Block Patterns
 		register_block_pattern_category(
 			'thelattens-theme',
-			array( 'label' => __( 'The Lattens Theme', 'thelattens-theme' ) )
+			array( 'label' => __( 'The Lattens Theme', 'thelattens' ) )
 		);
 
 		// Register block style
@@ -40,7 +41,7 @@ if ( ! function_exists( __NAMESPACE__ . '\init' ) ) {
 			'core/image',
 			array(
 				'name'  => 'thelattens-theme-image-style',
-				'label' => __( 'Polaroid', 'thelattens-theme' ),
+				'label' => __( 'Polaroid', 'thelattens' ),
 			)
 		);
 
