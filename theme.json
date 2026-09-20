@@ -1,0 +1,152 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "useRootPaddingAwareAlignments": true,
+    "layout": {
+      "contentSize": "680px",
+      "wideSize": "1200px"
+    },
+    "color": {
+      "defaultPalette": false,
+      "defaultGradients": false,
+      "palette": [
+        { "slug": "base", "name": "Base", "color": "#FBF7F2" },
+        { "slug": "surface", "name": "Surface", "color": "#F1EAE0" },
+        { "slug": "contrast", "name": "Contrast", "color": "#1F1B16" },
+        { "slug": "muted", "name": "Muted", "color": "#8A8178" },
+        { "slug": "accent", "name": "Accent", "color": "#B5552D" }
+      ]
+    },
+    "typography": {
+      "fluid": true,
+      "defaultFontSize": "16px",
+      "fontFamilies": [
+        {
+          "slug": "heading",
+          "name": "Fraunces",
+          "fontFamily": "Fraunces, Georgia, serif",
+          "fontFace": [
+            {
+              "fontFamily": "Fraunces",
+              "fontStyle": "normal",
+              "fontWeight": "300 900",
+              "src": ["file:./assets/fonts/fraunces-variable.woff2"]
+            }
+          ]
+        },
+        {
+          "slug": "body",
+          "name": "Figtree",
+          "fontFamily": "Figtree, system-ui, sans-serif",
+          "fontFace": [
+            {
+              "fontFamily": "Figtree",
+              "fontStyle": "normal",
+              "fontWeight": "300 900",
+              "src": ["file:./assets/fonts/figtree-variable.woff2"]
+            }
+          ]
+        }
+      ],
+      "fontSizes": [
+        {
+          "slug": "small",
+          "name": "Small",
+          "size": "0.875rem",
+          "fluid": false
+        },
+        {
+          "slug": "medium",
+          "name": "Medium",
+          "size": "1.0625rem",
+          "fluid": false
+        },
+        {
+          "slug": "large",
+          "name": "Large",
+          "size": "1.5rem",
+          "fluid": { "min": "1.25rem", "max": "1.5rem" }
+        },
+        {
+          "slug": "x-large",
+          "name": "Extra large",
+          "size": "2.25rem",
+          "fluid": { "min": "1.75rem", "max": "2.25rem" }
+        },
+        {
+          "slug": "xx-large",
+          "name": "Huge",
+          "size": "3.5rem",
+          "fluid": { "min": "2.25rem", "max": "3.5rem" }
+        }
+      ]
+    },
+    "spacing": {
+      "defaultSpacingSizes": false,
+      "spacingScale": { "steps": 0 },
+      "spacingSizes": [
+        { "slug": "20", "name": "XS", "size": "0.5rem" },
+        { "slug": "30", "name": "S", "size": "1rem" },
+        { "slug": "40", "name": "M", "size": "clamp(1.5rem, 3vw, 2rem)" },
+        { "slug": "50", "name": "L", "size": "clamp(2rem, 5vw, 3.5rem)" },
+        { "slug": "60", "name": "XL", "size": "clamp(3rem, 8vw, 6rem)" }
+      ]
+    },
+    "blocks": {
+      "core/image": { "lightbox": { "enabled": true, "allowEditing": true } }
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "var:preset|color|base",
+      "text": "var:preset|color|contrast"
+    },
+    "typography": {
+      "fontFamily": "var:preset|font-family|body",
+      "fontSize": "var:preset|font-size|medium",
+      "lineHeight": "1.65"
+    },
+    "spacing": {
+      "blockGap": "var:preset|spacing|30",
+      "padding": {
+        "left": "var:preset|spacing|40",
+        "right": "var:preset|spacing|40"
+      }
+    },
+    "elements": {
+      "heading": {
+        "typography": {
+          "fontFamily": "var:preset|font-family|heading",
+          "fontWeight": "500",
+          "lineHeight": "1.15"
+        }
+      },
+      "link": { "color": { "text": "var:preset|color|accent" } },
+      "button": {
+        "color": {
+          "background": "var:preset|color|contrast",
+          "text": "var:preset|color|base"
+        },
+        "border": { "radius": "999px" }
+      }
+    },
+    "blocks": {
+      "core/site-title": {
+        "typography": {
+          "fontFamily": "var:preset|font-family|heading",
+          "fontSize": "var:preset|font-size|large"
+        }
+      },
+      "core/post-date": {
+        "color": { "text": "var:preset|color|muted" },
+        "typography": { "fontSize": "var:preset|font-size|small" }
+      }
+    }
+  },
+  "templateParts": [
+    { "name": "header", "title": "Header", "area": "header" },
+    { "name": "footer", "title": "Footer", "area": "footer" }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+    "php-sniffer.autoConfigSearch": true,
+    "php-sniffer.executables.phpcs": "./vendor/bin/phpcs",
+    "php-sniffer.executables.phpcbf": "./vendor/bin/phpcbf",
+    "editor.formatOnSave": true
+}

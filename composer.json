@@ -1,0 +1,23 @@
+{
+    "name": "jameslatten/thelattens-theme",
+    "description": "Composer settings and packages for \"The Lattens\" WordPress Theme",
+    "autoload": {
+        "psr-4": {
+            "Jameslatten\\ThelattensTheme\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "James Latten",
+            "email": "hello@jameslatten.com"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "require-dev": {
+        "wp-coding-standards/wpcs": "3.0"
+    }
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<ruleset name="WordPress Plugin Coding Standards">
+    <description>Custom ruleset for WordPress Plugin Development</description>
+
+    <!-- Minimize output info and add colors -->
+    <arg value="ps"/>
+    <arg name="colors"/>
+
+    <!-- Check PHP files only -->
+    <arg name="extensions" value="php"/>
+
+    <!-- Use WordPress Coding Standards -->
+    <rule ref="WordPress" />
+
+    <!-- Define your text domain for internationalization (i18n) strings -->
+    <rule ref="WordPress.WP.I18n">
+        <properties>
+            <property name="text_domain" type="array" value="thelattens"/>
+        </properties>
+    </rule>
+
+    <!-- Directories and files to scan -->
+    <file>.</file>
+
+    <!-- Exclude third-party assets and dependencies -->
+    <exclude-pattern>*/vendor/*</exclude-pattern>
+    <exclude-pattern>*/node_modules/*</exclude-pattern>
+</ruleset>
