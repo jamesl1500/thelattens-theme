@@ -18,9 +18,13 @@
 
 ?>
 
-<!-- wp-paragraph {"placeholder": "Where did we go, and why?"} -->
-<p></p>
-<!-- /wp-paragraph -->
+<!-- wp:paragraph {"placeholder":"Where did we go, and why?","fontSize":"large"} -->
+<p class="has-large-font-size"></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:gallery {"linkTo":"none","align":"wide"} -->
+<figure class="wp-block-gallery alignwide has-nested-images columns-default is-cropped"></figure>
+<!-- /wp:gallery -->
 
 <!-- wp:heading -->
 <h2 class="wp-block-heading">The highlights</h2>
@@ -29,6 +33,10 @@
 <!-- wp:paragraph {"placeholder":"Best meal, best view, best moment…"} -->
 <p></p>
 <!-- /wp:paragraph -->
+
+<!-- wp:pullquote -->
+<figure class="wp-block-pullquote"><blockquote><p></p><cite></cite></blockquote></figure>
+<!-- /wp:pullquote -->
 
 <!-- wp:heading -->
 <h2 class="wp-block-heading">What we'd do differently</h2>

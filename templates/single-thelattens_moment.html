@@ -1,0 +1,33 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|60"}}},"layout":{"type":"constrained","contentSize":"36rem"}} -->
+<main class="wp-block-group" style="padding-top:var(--wp--preset--spacing--60)">
+  <!-- wp:post-featured-image {"aspectRatio":"4/5"} /-->
+
+  <!-- wp:post-content {"layout":{"type":"constrained"}} /-->
+
+  <!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
+  <div class="wp-block-group">
+    <!-- wp:thelattens/byline /-->
+
+    <!-- wp:post-date /-->
+  </div>
+  <!-- /wp:group -->
+
+  <!-- wp:post-terms {"term":"thelattens_trip"} /-->
+
+  <!-- wp:separator {"className":"is-style-wide"} -->
+  <hr class="wp-block-separator has-alpha-channel-opacity is-style-wide"/>
+  <!-- /wp:separator -->
+
+  <!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+  <div class="wp-block-group">
+    <!-- wp:post-navigation-link {"type":"previous","label":"Earlier","showTitle":false} /-->
+
+    <!-- wp:post-navigation-link {"label":"Next","showTitle":false} /-->
+  </div>
+  <!-- /wp:group -->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

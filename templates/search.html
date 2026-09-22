@@ -2,6 +2,14 @@
 
 <!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|60"}}},"layout":{"type":"constrained","contentSize":"78rem"}} -->
 <main class="wp-block-group" style="padding-top:var(--wp--preset--spacing--60)">
+  <!-- wp:group {"layout":{"type":"constrained","contentSize":"44rem","justifyContent":"left"},"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|50"}}}} -->
+  <div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--50)">
+    <!-- wp:query-title {"type":"search"} /-->
+
+    <!-- wp:search {"label":"Search","showLabel":false,"placeholder":"Search the journal","buttonText":"Search"} /-->
+  </div>
+  <!-- /wp:group -->
+
   <!-- wp:query {"queryId":1,"query":{"inherit":true}} -->
   <div class="wp-block-query">
     <!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
@@ -15,6 +23,12 @@
 
     <!-- wp:query-pagination-next /-->
     <!-- /wp:query-pagination -->
+
+    <!-- wp:query-no-results -->
+    <!-- wp:paragraph {"textColor":"muted"} -->
+    <p class="has-muted-color has-text-color">We couldn't find anything for that search. Try a different word?</p>
+    <!-- /wp:paragraph -->
+    <!-- /wp:query-no-results -->
   </div>
   <!-- /wp:query -->
 </main>

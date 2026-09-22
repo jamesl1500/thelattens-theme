@@ -1,0 +1,186 @@
+/* The Lattens: shared theme styles. Design tokens live in theme.json. */
+
+::selection {
+	background: var(--wp--preset--color--blush);
+	color: var(--wp--preset--color--contrast);
+}
+
+:where(a, button, summary, [tabindex]):focus-visible {
+	outline: 2px solid var(--wp--preset--color--accent-dark);
+	outline-offset: 3px;
+	border-radius: 2px;
+}
+
+/* Header */
+.lattens-header {
+	border-bottom: 1px solid var(--wp--preset--color--line);
+}
+
+/* Eyebrow: small uppercase label above titles */
+.is-style-eyebrow,
+.lattens-eyebrow {
+	font-size: var(--wp--preset--font-size--x-small);
+	font-weight: 600;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+	color: var(--wp--preset--color--accent-dark);
+	margin-block-end: 0;
+}
+
+/* Card block style */
+.wp-block-group.is-style-card {
+	background: var(--wp--preset--color--surface);
+	border-radius: var(--wp--custom--radius--md);
+	padding: var(--wp--preset--spacing--40);
+}
+
+/* Home hero */
+.wp-block-cover.lattens-hero {
+	border-radius: var(--wp--custom--radius--sm);
+	padding: var(--wp--preset--spacing--50);
+}
+
+/* Eyebrows on dark backgrounds */
+.wp-block-cover .is-style-eyebrow,
+.lattens-stage .is-style-eyebrow {
+	color: var(--wp--preset--color--blush);
+}
+
+/* Dark video stage */
+.lattens-stage a:where(:not(.wp-element-button)) {
+	color: var(--wp--preset--color--blush);
+}
+
+.lattens-stage .wp-block-post-date,
+.lattens-stage .wp-block-thelattens-byline {
+	color: var(--wp--preset--color--blush);
+}
+
+/* Feed cards */
+.lattens-card {
+	display: flex;
+	flex-direction: column;
+	gap: var(--wp--preset--spacing--20);
+}
+
+.lattens-card .wp-block-post-featured-image {
+	overflow: hidden;
+	border-radius: var(--wp--custom--radius--sm);
+	background: var(--wp--preset--color--surface);
+	margin-block-end: var(--wp--preset--spacing--20);
+}
+
+.lattens-card .wp-block-post-featured-image img {
+	transition: transform var(--wp--custom--transition);
+}
+
+.lattens-card:hover .wp-block-post-featured-image img {
+	transform: scale(1.035);
+}
+
+.lattens-card .wp-block-post-title {
+	margin: 0;
+	text-wrap: balance;
+}
+
+.lattens-card .wp-block-post-excerpt__excerpt {
+	margin: 0;
+}
+
+/* Content-type badge (post type label) */
+.lattens-badge {
+	display: inline-block;
+	padding: 0.25em 0.75em;
+	border-radius: var(--wp--custom--radius--pill);
+	background: var(--wp--preset--color--blush);
+	color: var(--wp--preset--color--contrast);
+	font-size: var(--wp--preset--font-size--x-small);
+	font-weight: 600;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+/* Long-form reading */
+.wp-block-post-title {
+	text-wrap: balance;
+}
+
+.wp-block-post-content :where(p) {
+	text-wrap: pretty;
+}
+
+/* Video pages: YouTube stays 16:9, TikTok stays a vertical phone frame */
+.wp-block-embed-tiktok .wp-block-embed__wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.wp-block-embed-tiktok .wp-block-embed__wrapper > blockquote,
+.wp-block-embed-tiktok .wp-block-embed__wrapper iframe {
+	max-width: 21rem;
+	width: 100%;
+}
+
+.wp-block-embed.is-type-video .wp-block-embed__wrapper {
+	border-radius: var(--wp--custom--radius--sm);
+	overflow: hidden;
+}
+
+/* Photos */
+.wp-block-gallery .wp-block-image img {
+	transition: transform var(--wp--custom--transition);
+}
+
+.wp-block-gallery .wp-block-image:hover img {
+	transform: scale(1.02);
+}
+
+/* Comments */
+.lattens-comments {
+	margin-block-start: var(--wp--preset--spacing--50);
+}
+
+.lattens-comments .wp-block-comment-template > li {
+	border-block-end: 1px solid var(--wp--preset--color--line);
+}
+
+.lattens-comments .wp-block-comment-author-name {
+	font-weight: 600;
+}
+
+.lattens-comments .wp-block-comment-author-name a,
+.lattens-comments .wp-block-comment-date a {
+	text-decoration: none;
+}
+
+.lattens-comments .wp-block-comment-date {
+	color: var(--wp--preset--color--muted);
+}
+
+.lattens-comments :where(input[type="text"], input[type="email"], input[type="url"], textarea) {
+	width: 100%;
+	padding: 0.75em 1em;
+	border: 1px solid var(--wp--preset--color--line);
+	border-radius: var(--wp--custom--radius--sm);
+	background: #fff;
+	font: inherit;
+}
+
+.lattens-comments :where(input, textarea):focus-visible {
+	border-color: var(--wp--preset--color--accent-dark);
+}
+
+/* Footer */
+.lattens-footer {
+	border-top: 1px solid var(--wp--preset--color--line);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		transition-duration: 0.01ms !important;
+		animation-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}

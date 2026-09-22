@@ -1,0 +1,69 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group" style="padding-top:var(--wp--preset--spacing--40)">
+  <!-- wp:cover {"overlayColor":"evergreen","minHeight":70,"minHeightUnit":"vh","contentPosition":"bottom left","isDark":true,"align":"wide","className":"lattens-hero","layout":{"type":"constrained"}} -->
+  <div class="wp-block-cover alignwide has-custom-content-position is-position-bottom-left lattens-hero" style="min-height:70vh"><span aria-hidden="true" class="wp-block-cover__background has-evergreen-background-color has-background-dim-100 has-background-dim"></span><div class="wp-block-cover__inner-container">
+    <!-- wp:paragraph {"className":"is-style-eyebrow"} -->
+    <p class="is-style-eyebrow">The Lattens</p>
+    <!-- /wp:paragraph -->
+
+    <!-- wp:heading {"level":1,"fontSize":"display"} -->
+    <h1 class="wp-block-heading has-display-font-size">Two newlyweds, <em>one shared journal.</em></h1>
+    <!-- /wp:heading -->
+
+    <!-- wp:paragraph {"fontSize":"large"} -->
+    <p class="has-large-font-size">Trips, photos, videos and small everyday moments from our first chapter together.</p>
+    <!-- /wp:paragraph -->
+
+    <!-- wp:buttons -->
+    <div class="wp-block-buttons">
+      <!-- wp:button {"backgroundColor":"base","textColor":"contrast"} -->
+      <div class="wp-block-button"><a class="wp-block-button__link has-contrast-color has-base-background-color has-text-color has-background wp-element-button" href="/albums/">Photo albums</a></div>
+      <!-- /wp:button -->
+
+      <!-- wp:button {"textColor":"base","className":"is-style-outline"} -->
+      <div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-base-color has-text-color wp-element-button" href="/videos/">Watch our videos</a></div>
+      <!-- /wp:button -->
+    </div>
+    <!-- /wp:buttons -->
+  </div></div>
+  <!-- /wp:cover -->
+
+  <!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|40"}}},"layout":{"type":"constrained","contentSize":"78rem"}} -->
+  <div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--40)">
+    <!-- wp:paragraph {"className":"is-style-eyebrow"} -->
+    <p class="is-style-eyebrow">Latest</p>
+    <!-- /wp:paragraph -->
+
+    <!-- wp:heading -->
+    <h2 class="wp-block-heading">Recently on the journal</h2>
+    <!-- /wp:heading -->
+  </div>
+  <!-- /wp:group -->
+
+  <!-- wp:query {"queryId":1,"query":{"inherit":true},"align":"wide"} -->
+  <div class="wp-block-query alignwide">
+    <!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
+    <!-- wp:template-part {"slug":"post-card"} /-->
+    <!-- /wp:post-template -->
+
+    <!-- wp:query-pagination {"paginationArrow":"arrow","layout":{"type":"flex","justifyContent":"center"}} -->
+    <!-- wp:query-pagination-previous /-->
+
+    <!-- wp:query-pagination-numbers /-->
+
+    <!-- wp:query-pagination-next /-->
+    <!-- /wp:query-pagination -->
+
+    <!-- wp:query-no-results -->
+    <!-- wp:paragraph {"align":"center","textColor":"muted"} -->
+    <p class="has-text-align-center has-muted-color has-text-color">Nothing here yet. Our first post is coming soon.</p>
+    <!-- /wp:paragraph -->
+    <!-- /wp:query-no-results -->
+  </div>
+  <!-- /wp:query -->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

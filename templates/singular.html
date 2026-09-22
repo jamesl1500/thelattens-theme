@@ -1,11 +1,64 @@
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 
-<!-- wp:group {"tagName":"main","layout":{"type":"constrained"}} -->
-<main class="wp-block-group">
-  <!-- wp:post-title {"level":1} /-->
-  <!-- wp:post-date /-->
-  <!-- wp:post-featured-image /-->
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group" style="padding-top:var(--wp--preset--spacing--60)">
+  <!-- wp:post-terms {"term":"thelattens_trip"} /-->
+
+  <!-- wp:post-title {"level":1,"fontSize":"xx-large"} /-->
+
+  <!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
+  <div class="wp-block-group">
+    <!-- wp:thelattens/byline /-->
+
+    <!-- wp:post-date /-->
+  </div>
+  <!-- /wp:group -->
+
+  <!-- wp:post-featured-image {"aspectRatio":"3/2","align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}}} /-->
+
   <!-- wp:post-content {"layout":{"type":"constrained"}} /-->
+
+  <!-- wp:separator {"className":"is-style-wide"} -->
+  <hr class="wp-block-separator has-alpha-channel-opacity is-style-wide"/>
+  <!-- /wp:separator -->
+
+  <!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+  <div class="wp-block-group">
+    <!-- wp:post-navigation-link {"type":"previous","label":"Earlier","showTitle":true} /-->
+
+    <!-- wp:post-navigation-link {"label":"Next","showTitle":true} /-->
+  </div>
+  <!-- /wp:group -->
+
+  <!-- wp:comments {"className":"lattens-comments"} -->
+  <div class="wp-block-comments lattens-comments">
+    <!-- wp:comments-title {"level":2,"fontSize":"large"} /-->
+
+    <!-- wp:comment-template -->
+    <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}}},"layout":{"type":"default"}} -->
+    <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
+      <!-- wp:comment-author-name {"fontSize":"small"} /-->
+
+      <!-- wp:comment-date {"fontSize":"small"} /-->
+
+      <!-- wp:comment-content /-->
+
+      <!-- wp:comment-reply-link {"fontSize":"small"} /-->
+    </div>
+    <!-- /wp:group -->
+    <!-- /wp:comment-template -->
+
+    <!-- wp:comments-pagination -->
+    <!-- wp:comments-pagination-previous /-->
+
+    <!-- wp:comments-pagination-numbers /-->
+
+    <!-- wp:comments-pagination-next /-->
+    <!-- /wp:comments-pagination -->
+
+    <!-- wp:post-comments-form /-->
+  </div>
+  <!-- /wp:comments -->
 </main>
 <!-- /wp:group -->
 
